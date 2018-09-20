@@ -1,0 +1,16 @@
+$bgrouge : #e33C2C;
+$width100 : 100%;
+$fontmobile : arial;
+*{
+	margin: 0;
+}
+.yo{
+	background: $bgrouge;
+	width: 100%;
+	height: 10vh;
+	
+	ul li{
+		font: $fontmobile;
+	}
+	
+}
