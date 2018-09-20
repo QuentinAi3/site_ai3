@@ -36,3 +36,9 @@ git merge <branch>   ## get everything from the branch.
 git checkout dev  ## switch back to working branch
 git pull          ## make sure we are up to date
 git merge master  ## get the changes from master
+
+* UNDO and Reset everything back to server version
+
+git fetch origin master
+git reset --hard FETCH_HEAD
+git clean -df
