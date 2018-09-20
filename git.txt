@@ -2,3 +2,4 @@ git stage .      =   enregistré travail local
 git commit -m "commentaire"     =    enregistré pour envoyé a github
 git pull    =    prendre dernière vesion sur le serv
 git push    =    envoyé sur le serv
+fuck
