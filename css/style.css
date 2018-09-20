@@ -1,29 +1,102 @@
 @font-face {
-  font-family: 'segoeui';
-  src: url("../fonts/SegoeUI.eot");
-  src: url("../fonts/SegoeUI.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUI.woff2") format("woff2"), url("../fonts/SegoeUI.woff") format("woff"), url("../fonts/SegoeUI.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'bebas';
-  src: url("BebasNeue.eot");
-  src: url("BebasNeue.eot?#iefix") format("embedded-opentype"), url("BebasNeue.woff2") format("woff2"), url("BebasNeue.woff") format("woff"), url("BebasNeue.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
+    font-family: 'Segoe UI';
+    src: url('SegoeUI.eot');
+    src: url('SegoeUI.eot?#iefix') format('embedded-opentype'),
+        url('SegoeUI.woff2') format('woff2'),
+        url('SegoeUI.woff') format('woff'),
+        url('SegoeUI.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('BebasNeue.eot');
+    src: url('BebasNeue.eot?#iefix') format('embedded-opentype'),
+        url('BebasNeue.woff2') format('woff2'),
+        url('BebasNeue.woff') format('woff'),
+        url('BebasNeue.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 * {
-  margin: 0;
+	margin: 0;
 }
 
-.yo {
-  width: 100%;
-  height: 10vh; 
+nav {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
 }
-.yo ul li {
-    font-size: 10px;
+
+
+.logorouge{
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	height: auto;
 }
+.join{
+	font-family: 'Bebas Neue';
+	font-size: 19px;
+	line-height: 20px;
+}
+.rond{
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	background-color: red;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #e8e8e8;
+	position: relative;
+	
+}
+.rond div{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.rond span{
+	width: 35px;
+	height: 6px;
+	display: block;
+	background-color: #e33C2C;
+	border-radius: 3px;
+	margin: 4px;
+	
+
+}
+
+
+header{
+	background: url("../images/header.png") no-repeat ;
+	background-size: cover;
+	width: 100%;
+	height: 260px;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (min-width: 576px) {
