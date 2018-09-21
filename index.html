@@ -11,6 +11,8 @@
 <link rel="stylesheet" href="bootstrap/dist/css/bootstrap-grid.min.css" type="text/css">
 <link rel="stylesheet" href="bootstrap/dist/css/bootstrap-reboot.min.css" type="text/css">
 <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css" type="text/css">
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 </head>
 
@@ -22,12 +24,13 @@
 <body>
 	
 <nav class="container">
+<div class="back-cover"></div>
 	<div class="row">
 			<div class="col-4 align-self-center">
 			<img class="logorouge" src="images/logo_rouge.svg" alt="">
 			</div>
 			<div class="col-4 menuToggle align-self-center">
-				<div class="rond">
+				<div id="open" class="rond">
 					<div>
 						<span></span>
 						<span></span>
@@ -38,6 +41,16 @@
 			<div class="col-4 team align-self-center">rejoignez <br/>nos équipes
 			</div>
 	</div>
+	
+	<div id="menu-open">
+
+	</div>
+			<div id="open" class="rond-open cache">
+			<div class="btn-rond">
+				<span></span>
+				<span></span>
+			</div>
+		</div>
 </nav>
 
 <header class="header">
@@ -128,7 +141,20 @@
 	<section class="container-fluid news">
 		<h1>à la une</h1>
 		<div class="row">
-			<div class="d-flex justify-content-center">
+			<div class="d-flex justify-content-center carte">
+				<article class="col-9">
+					<header>
+						<img src="images/news1.png" alt="">
+					</header>
+					<div class="content-news">
+						<span class="">25/06/2018</span>
+						<h2>Title</h2>
+						<p class="txt-news">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce iaculis ullamcorper consectetur. Aenean vel elit id turpis convallis consectetur vel at sem. Pellentesque quis placerat dolor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce iaculis ullamcorper consectetur. Aenean vel elit id turpis convallis consectetur vel at sem. Pellentesque quis placerat dolor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce iaculis ullamcorper consectetur. Aenean vel elit id turpis convallis consectetur vel at sem. Pellentesque quis placerat dolor.</p>
+						<a href=""><div class="offset-1 col-10 btnredmini">lire</div></a>
+					</div>
+				</article>
+			</div>
+			<div class="d-flex justify-content-center carte">
 				<article class="col-9">
 					<header>
 						<img src="images/news1.png" alt="">
@@ -141,20 +167,7 @@
 					</div>
 				</article>
 			</div>
-			<div class="d-flex justify-content-center">
-				<article class="col-9">
-					<header>
-						<img src="images/news1.png" alt="">
-					</header>
-					<div class="content-news">
-						<span class="">25/06/2018</span>
-						<h2>Title</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce iaculis ullamcorper consectetur. Aenean vel elit id turpis convallis consectetur vel at sem. Pellentesque quis placerat dolor.</p>
-						<a href=""><div class="offset-1 col-10 btnredmini">lire</div></a>
-					</div>
-				</article>
-			</div>
-			<div class="d-flex justify-content-center">
+			<div class="d-flex justify-content-center carte">
 				<article class="col-9">
 					<header>
 						<img src="images/news1.png" alt="">
@@ -182,9 +195,17 @@
 					<li class="col-4 align-self-center"><img src="images/logo_blog.svg" alt=""></li>
 				</ul>
 				<h2>certifications</h2>
-				<ul>
-					<li><img src="" alt=""></li>
-					<li><img src="" alt=""></li>
+				<ul class="row">
+					<li class="offset-3 col-6"><img src="images/logo_ms_partner.svg" alt=""></li>
+					<li class="offset-3 col-6"><img src="images/logo_ms_partner.svg" alt=""></li>
+				</ul>
+				<h2>restons connectés</h2>
+				<ul class="row rs">
+					<li class=""><img src="images/linkedin.svg" alt=""></li>
+					<li class=""><img src="images/twitter.svg" alt=""></li>
+					<li class=""><img src="images/facebook.svg" alt=""></li>
+					<li class=""><img src="images/instagram.svg" alt=""></li>
+					<li class=""><img src="images/viadeo.svg" alt=""></li>
 				</ul>
 			</div>
 		</div>
