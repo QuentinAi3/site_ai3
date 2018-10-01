@@ -482,16 +482,17 @@ footer ul li img{
 	}
 	.menu-desktop{
 		margin: 0;
-		display: block;
+		display: inline-block;
 	}
 	.menu-desktop li{
 		display: inline-block;
 		border: 0;
+		font-size: 9px;
+		text-align: center;
 	}
 	
 	.menu-desktop li a{
 		position: relative;
-		margin: 0 1em;
 		padding-right: 0;
 		padding-left: 0;
 		-webkit-transition: color 0.4s;
