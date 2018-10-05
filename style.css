@@ -1,0 +1,451 @@
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../fonts/SegoeUI.eot');
+    src: url('../fonts/SegoeUI.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SegoeUI.woff2') format('woff2'),
+        url('../fonts/SegoeUI.woff') format('woff'),
+        url('../fonts/SegoeUI.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeue.eot');
+    src: url('../fonts/BebasNeue.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BebasNeue.woff2') format('woff2'),
+        url('../fonts/BebasNeue.woff') format('woff'),
+        url('../fonts/BebasNeue.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+/** BOUTONS **/
+
+.btnred{
+	font-family: 'Bebas Neue';
+	color: white;
+	background-color: #e33C2C;
+	border-radius: 9999px;
+	text-align: center;
+	padding: 4% 0;
+	font-size: 22px;
+	margin: 30px 0 0 0;
+	transition: 0.4s;
+	text-decoration: none;
+}
+.btnred:hover{
+	background-color: #3d3d3d;
+	transition: 0.4s;
+	text-decoration: none;
+}
+
+.btnwhite{
+	font-family: 'Bebas Neue';
+	color: #e33C2C;
+	background-color: #fff;
+	border-radius: 9999px;
+	text-align: center;
+	padding: 4% 0;
+	font-size: 22px;
+	margin: 30px 0 0 0;
+	transition: 0.4s;
+	-webkit-box-shadow: inset 0px 0px 19px -2px rgba(0,0,0,0.6);
+	-moz-box-shadow: inset 0px 0px 19px -2px rgba(0,0,0,0.6);
+	box-shadow: inset 0px 0px 19px -2px rgba(0,0,0,0.6);
+}
+.btnwhite:hover{
+	background-color: #3d3d3d;
+	transition: 0.4s;
+	color: white;
+	text-decoration: none;
+}
+
+.btnblack{
+	font-family: 'Bebas Neue';
+	color: white;
+	background-color: #3d3d3d;
+	border-radius: 9999px;
+	text-align: center;
+	padding: 4% 0;
+	font-size: 22px;
+	margin: 20px 0 0 0;
+	transition: 0.4s;
+	text-decoration: none;
+}
+.btnblack:hover{
+	background-color: #bababa;
+	transition: 0.4s;
+	color: #fff;
+	text-decoration: none;
+}
+
+.btnredmini{
+	font-family: 'Bebas Neue';
+	color: white;
+	background-color: #e33C2C;
+	border-radius: 9999px;
+	text-align: center;
+	padding: 1% 0;
+	font-size: 1.6em;
+	transition: 0.4s;
+	text-decoration: none;
+}
+.btnredmini:hover{
+	background-color: #3d3d3d;
+	transition: 0.4s;
+	text-decoration: none;
+}
+
+
+/** FIN BOUTONS **/
+
+/** MENU OPEN **/
+
+.back-cover{
+	position: fixed;
+	z-index: 99997;
+	width: 100vw;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: none;
+	transition: ease-in 0.4s;
+	padding: 10px;
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 28%, rgba(255,255,255,0.7) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 28%,rgba(255,255,255,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 28%,rgba(255,255,255,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#b3ffffff',GradientType=0 ); /* IE6-9 */
+	
+}
+
+.rond-open{
+	background-color: #3a3a3a;
+}
+
+.rond-open div span{
+	color: #fafafa;
+}
+.rond-open span:first-child{
+	transform: rotate(45deg);
+	transform-origin: center;
+	transition: 0.4s
+}
+.rond-open span:last-child{
+	transform: rotate(-45deg);
+	transform-origin: center;
+	transition: 0.4s
+}
+.menu{
+	
+}
+.menu li{
+	padding: 15px;
+	list-style-type: none;
+	border-bottom: solid #3a3a3a 1px;
+}
+.menu li a{
+	font-size: 1.5em;
+	text-decoration: none;
+	color: #3a3a3a;
+	
+}
+/** FIN MENU OPEN **/
+
+
+
+* {
+	font-family: 'Segoe UI';
+	font-size: 12px;
+	margin: 0;
+}
+html {
+    font-size: calc(12px + 10 * ((100vw - 576px) / 680));
+  }
+.contentbody{
+	background: url("../images/bgmobile.png") no-repeat ;
+	background-size: 100%;
+}
+nav {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+
+.logorouge{
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	height: auto;
+}
+.team{
+	font-family: 'Bebas Neue';
+	font-size: 19px;
+	line-height: 20px;
+}
+.rond{
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	background-color: red;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #e8e8e8;
+	position: relative;
+	
+}
+.rond div{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.rond span{
+	width: 35px;
+	height: 6px;
+	display: block;
+	background-color: #e33C2C;
+	border-radius: 3px;
+	margin: 4px;
+	
+
+}
+
+
+.header{
+	background: url("../images/header.png") no-repeat ;
+	background-size: cover;
+	width: 100%;
+	height: 260px;
+	margin: 0;
+	padding: 0;
+}
+
+
+.pilier{
+
+}
+.content-pilier{
+
+}
+.pilier article{
+	height: 201px;
+	background-color: #fff;
+	border-radius: 11px;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(150,150,150,0.4);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(150,150,150,0.4);
+	box-shadow: 0px 0px 20px 0px rgba(150,150,150,0.4);
+}
+.pilier article:not(:last-child){
+	margin-bottom: 10px;
+}
+.content-pilier article header{
+	text-align: center;
+}
+.content-pilier article header .employee{
+	width: 32px;
+	height: auto;
+	padding-top: 14px;
+	margin-bottom: 14px;
+}
+.DW{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.txt-pilier{
+	margin-left: 5%;
+	width: 90%;
+	font-size: ;
+	color: #3D3D3D;
+	line-height: 16px;
+	text-align: center;
+}
+
+.ecosysteme{
+	margin-top: 75px;
+}
+.ecosysteme h1{
+	text-align: center;
+	font-family: 'Bebas Neue';
+	color: black;
+	font-size: 3em;
+	margin-bottom: 45px;
+}
+.ecosysteme article{
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(150,150,150,0.4);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(150,150,150,0.4);
+	box-shadow: 0px 0px 20px 0px rgba(150,150,150,0.4);
+	height: 260px;
+	padding: 10%;
+	margin-bottom: 10px;
+}
+
+.ecosysteme article span{
+	padding: 2px 4px;
+	background-color: #3d3d3d;
+	color: white;
+}
+
+.ecosysteme article img {
+	width: 153px;
+	height: auto;
+	display: block;
+	margin: 1em 0;
+}
+.ecosysteme article p{
+	font-size: 13px;
+	line-height: 16px;
+}
+
+
+
+.join{
+	background: url("../images/bg-rejoindre.png") no-repeat ;
+	background-size: 100%;
+	height: 460px;
+	text-align: center;
+	padding: 15% 3%;
+	margin-top: 65px;
+}
+
+.join h1{
+	font-family: 'Bebas Neue';
+	color: white;
+	font-size: 3em;
+	margin-bottom: 25px;
+}
+.join p{
+	color: white;
+	font-size: 1.4em;
+	line-height: 24px;
+}
+.news{
+	margin-top: 85px;
+}
+.news h1{
+	font-family: 'Bebas Neue';
+	color: black;
+	font-size: 3em;
+	margin-bottom: 25px;
+	text-align: center;
+}
+.news carte{
+	max-height: 435px;
+}
+.news article{
+	border-radius: 10px;
+	background-color: #fff;
+	padding: 0;
+	margin-bottom: 20px;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(150,150,150,0.4);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(150,150,150,0.4);
+	box-shadow: 0px 0px 20px 0px rgba(150,150,150,0.4);
+}
+
+
+.news article header img{
+	border-radius: 10px 10px 0 0;
+	width: 100%;
+	height: auto;
+}
+.news article .content-news{
+	padding: 20px 25px;
+}
+.news article div span{
+	color: #bababa;
+	font-size: 1.2em;
+}
+
+.news article div h2{
+	font-weight: bold;
+	font-size: 1.8em;
+	margin: 8px 0;
+	
+}
+.news article div .txt-news{
+
+}
+.news article div p{
+	color: #828282;
+	line-height: 16px;
+	max-height: 8rem;
+	overflow: hidden;
+	margin-bottom: 20px;
+	text-overflow: ellipsis;
+}
+
+
+footer{
+	background-color: #3d3d3d;
+	margin-top: 70px;
+	text-align: center;
+}
+
+footer h2{
+	font-family: 'Bebas Neue';
+	color: #fff;
+	font-size: 2.2em;
+	margin-top: 65px;
+	
+}
+footer ul{
+	padding: 0;
+	margin: 20px 0 60px 0;
+}
+footer ul li{
+	list-style-type: none;
+}
+footer ul li img{
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+}
+.rs li{
+	display: inline-block;
+	width: 20%;
+	height: auto;
+}
+
+.rs li img{
+	width: 60%;
+	height: auto;
+}
+
+
+@media (min-width: 576px) {
+}
+
+
+@media (min-width: 768px) {
+	
+}
+
+
+@media (min-width: 992px) {
+	
+}
+
+
+@media (min-width: 1200px) {
+	*{
+		font-size: 22px;
+	}
+	
+	.pilier .content-pilier article{
+		margin: 15px;
+	}
+}

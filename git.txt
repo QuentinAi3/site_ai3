@@ -1,5 +1,44 @@
-git stage .      =   enregistré travail local
-git commit -m "commentaire"     =    enregistré pour envoyé a github
-git pull    =    prendre dernière vesion sur le serv
-git push    =    envoyé sur le serv
-fuck
+* Get all from current branch
+
+git pull
+
+* Save all to current branch
+
+git pull    ### get all from the central server
+git status  ### check the status
+git stage .  ### or git add <file>    to add to the list of things to commit
+git commit -m "<comment>"   ### Things to push to the server
+git push     ### push all to server. 
+
+
+* Create a new branch
+
+git branch  NewBranch ## create branch new branch
+git checkout NewBranch ## Switch to the new branch
+
+
+* Change branch and merge from master.
+
+git checkout <branch>  ## switch to the new branch
+git pull                      ## Get everything from that branch.
+git merge master       ## pull latest from master.
+
+
+* Push changes from a branch back to master
+
+git checkout master ## switch back to master
+git pull  ## get everything uptodate
+git merge <branch>   ## get everything from the branch.
+
+
+* Switch back to dev branch and update from master
+
+git checkout dev  ## switch back to working branch
+git pull          ## make sure we are up to date
+git merge master  ## get the changes from master
+
+* UNDO and Reset everything back to server version
+
+git fetch origin master
+git reset --hard FETCH_HEAD
+git clean -df
