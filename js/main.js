@@ -13,5 +13,6 @@ $(document).ready(function(){
 	$('.rond-open').on('click',function(){
 		$('.cache').hide();
 	});
+
 });
 
