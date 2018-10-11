@@ -10,7 +10,6 @@
 }
 
 @font-face {
-
     src: url('../fonts/BebasNeue.eot');
     src: url('../fonts/BebasNeue.eot?#iefix') format('embedded-opentype'),
         url('../fonts/BebasNeue.woff2') format('woff2'),
@@ -106,6 +105,25 @@
 	transition: 0.4s;
 	text-decoration: none;
 }
+
+.btn-bd-red{
+	font-family: 'Bebas Neue';
+	color: #e33C2C;
+	background-color: #fff;
+	border-radius: 9999px;
+	text-align: center;
+	padding: 4% 0;
+	font-size: 22px;
+	margin: 30px 0 0 0;
+	transition: 0.4s;
+	border: solid 2px #e33C2C;
+}
+.btn-bd-red:hover{
+	border: solid 2px #3d3d3d;
+	transition: 0.4s;
+	color: #3D3D3D;
+	text-decoration: none;
+}
 /** FIN BOUTONS **/
 
 
@@ -137,12 +155,12 @@
 .rond-open span:first-child{
 	transform: rotate(45deg);
 	transform-origin: center;
-	transition: 0.4s
+	transition: 0.4s;
 }
 .rond-open span:last-child{
 	transform: rotate(-45deg);
 	transform-origin: center;
-	transition: 0.4s
+	transition: 0.4s;
 }
 .menu li{
 	padding: 15px;
@@ -248,7 +266,6 @@ a.team {
 	margin: 0;
 	padding: 0;
 	position: relative;
-
 }
 .content-pilier{
 	top: -3em;
@@ -490,6 +507,34 @@ footer ul li img{
 	color: #fafafa;
 }
 
+/** FICHE A LA UNE **/
+
+.fiche-news img {
+	position: relative;
+}
+
+.fiche-news article header {
+	padding-top: 1.5em;
+	vertical-align: baseline;
+}
+.fiche-news article header span{
+	color: #bababa;
+	padding: 0 0.5em;
+	
+}
+
+.fiche-news article header h1{
+	font-family: 'Bebas Neue';
+	
+}
+
+.fiche-news section img {
+	padding: 0.5em 0;
+}
+
+
+
+
 /** /\/\/\/\/\/\/\----- NOS EVENEMENTS -----/\/\/\/\/\/\/\  **/
 
 .bgevent{
@@ -535,6 +580,28 @@ footer ul li img{
 	font-size: 2.5em;
 	display: block;
 }
+
+.rs-color {
+	margin-top: 2em;
+}
+
+.rs-color ul li:first-child{
+	color:black;
+}
+
+.rs-color ul li{
+	display: inline-block;
+	width: 20%;
+	height: auto;
+}
+.rs-color ul li img{
+	width: 50%;
+	height: auto;
+	max-height: 40px;
+}
+
+
+
 
 
 
@@ -851,6 +918,17 @@ footer ul li img{
 	.bgevent p{
 		font-size: 3.5em;
 }
+
+
+
+/*****FICHE A LA UNE *****/
+.img-head-article{
+	height: 400px;
+	background-size: cover;
+}
+
+
+
 
 }
 
