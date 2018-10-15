@@ -119,7 +119,6 @@
 	top: 0;
 	left: 0;
 	display: none;
-	transition: 0.4s;
 	padding: 10px;
 	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 28%, rgba(255,255,255,0.7) 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 28%,rgba(255,255,255,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -173,6 +172,16 @@
 html {
     font-size: calc(12px + 10 * ((100vw - 576px) / 680));
   }
+h2{
+	font-family: 'Bebas Neue'!important;
+}
+h3{
+	font-family: 'Segoe Ui'!important;
+	font-size: 2em!important;
+}
+ul{
+	padding: 0;
+}
 .contentbody{
 	background: url("../images/bgmobile.png") no-repeat ;
 	background-size: 100%;
@@ -197,6 +206,9 @@ nav {
 	font-family: 'Bebas Neue';
 	font-size: 19px;
 	line-height: 20px;
+}
+.team a{
+	text-decoration: none;
 }
 .rond{
 	width: 65px;
@@ -225,6 +237,7 @@ nav {
 	width: 100%;
 	overflow: hidden;
 	height: 230px;
+	position: relative;
 }
 .header img{
 	width: 100%;
@@ -266,7 +279,7 @@ nav {
 .bar-info {
 	display: none;
 }
-.pilier .content-pilier article header h2{
+.pilier .content-pilier article header h3{
 	font-size: 18px;
 	font-weight: bold;
 }
@@ -379,7 +392,7 @@ nav {
 	font-size: 1.2em;
 	display: inline-block;
 }
-.news article div h2{
+.news article div h3{
 	font-weight: bold;
 	font-size: 1.8em;
 	margin: 8px 0;
@@ -478,6 +491,172 @@ footer ul li img{
 }
 .news .incontournable h1{
 	color: #fafafa;;
+}
+
+
+/** /\/\/\/\/\/\/\-----PAGE NOUS REJOINDRE-----/\/\/\/\/\/\/\  **/
+.header div{
+	position: absolute;
+	top: 38%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	color: #fafafa;
+}
+.header div h2{
+	font-family: 'Bebas Neue';
+}
+.header div p{
+	font-size: 0.6em;
+	font-weight: 100;
+}
+.button-job div:first-child{
+	color: #e33C2C;
+}
+.button-job div div{
+	font-family: 'Bebas Neue';
+	text-align: center;
+	background-color: #fafafa;
+	color: #535353;
+	border-radius: 11px;
+	padding: 20px 15px;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.4);
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.4);
+	cursor: pointer;
+}
+.button-job div div::after{
+	content: '\25bc';	
+}
+.job{
+	
+	margin: 15px 0;
+	text-align: center;
+}
+.job span{
+	color: #e33C2C;
+	
+}
+.job .job-p, .job-p span{
+	font-size: 15px;
+}
+.job .job-p{
+	padding: 20px 0;
+}
+.recherche{
+	height: 30px;
+	border: none;
+	padding-left: 15px;
+	background-color: #fafafa!important;
+	border-radius: 8px!important;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3)!important;
+	-moz-box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3)!important;
+	box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3)!important;
+
+}
+.job .filter{
+	margin-top: 20px;
+}
+
+.job .filter option{
+	padding: 20px;
+}
+.custom-select{
+	height: 50px!important;
+	border-radius: 11px!important;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3);
+	box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3);
+}
+.form-check label{
+	margin-left: 15px;
+}
+.form-check input{
+	border: solid #bababa 1px!important;
+
+}
+.form-check{
+	margin-bottom: 10px;
+}
+.checkbox{
+	margin-top: 20px;
+}
+.liste-postes{
+		margin-top: 45px;
+}
+.postes{
+	background-color: #fafafa;
+	text-align: left;
+	padding: 20px 0;
+	border-radius: 11px!important;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3);
+	box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3);
+	margin-bottom: 20px;
+	transition: 0.6s;
+}
+.postes p{
+	margin: 0;
+}
+.postes p img{
+	float: right;
+	margin-right: 15px;
+
+	position: relative;
+	display: block;
+}
+.postes span:nth-of-type(1){
+	padding: 0 8px;
+}
+.postes span:nth-of-type(2){
+	color: #828282;
+}
+.postes:nth-of-type(1){
+	
+}
+
+
+.politique-rh{
+	margin-top: 30px;
+	display: none;
+	background-color: rgba(255,255,255,0.7);
+}
+.politique-rh h2,h3{
+	font-size: 2em;
+}
+.politique-rh h3{
+	font-weight: bold;
+}
+.prime ul{
+	padding: 0;
+}
+.prime ul li{
+	list-style-type: none;
+}
+.avantages{
+	margin-top: 25px;
+	background-color: #e33C2C;
+	padding: 20px 0;
+	color: #fafafa;
+}
+.avantages p img{
+	width: 200%;
+}
+.avantages div ul{
+	display: inline-block;
+	text-align: left;
+	line-height: 25px;
+}
+.avantages div ul li{
+	list-style-type: none;
+
+}
+.tribu{
+	margin: 35px;
+	text-align: center;
+}
+.tribu h2{
+	margin: 20px;
 }
 @media (min-width: 576px) {
 	*{
@@ -685,16 +864,14 @@ footer ul li img{
 		margin-right: 0;
 		margin-left: 11px;
 	}
-	
-	
 	.header{
 		height: 600px;
+		margin-top: 82px;
 	}
 	.header video{
 		width: 100%;
 		height: auto;
 		filter: brightness(60%);
-		
 	}
 	.bar-info {
 		margin-top: 40px;
@@ -771,5 +948,68 @@ footer ul li img{
 	.bgalaune p{
 		font-size: 3.5em;
 	}
+/** /\/\/\/\/\/\/\-----NOUS REJOINDRE-----/\/\/\/\/\/\/\  **/	
+	
+	.button-job{
+		position: relative;
+		top: -60px;
+	}
+	.button-job div div{
+		padding: 30px 15px;
+		font-size: 1.8em;
+		margin: 20px;
+	}
+	.job .filter{
+		margin-left: 20px;
 
+	}
+	.job .recherche{
+		margin: 20px 0 0 0;
+		height: 50px;
+		border-radius: 11px!important;
+		padding-left: 20px!important;
+	}
+	.job .job-p, .job-p span{
+		font-size: 25px;
+	}
+	.postes span:nth-of-type(1){
+	padding: 0 25px;
+	}
+	.postes:hover{
+		background-color: #CFCFCF;
+		transition: 0.8s;
+	}
+	.liste-postes{
+		display: inline-block;
+	}
+	.desc-postes{
+		background-color: #fafafa;
+		text-align: left;
+		padding: 80px;
+		margin-top: 45px;
+		border-radius: 11px!important;
+		-webkit-box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3);
+		-moz-box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3);
+		box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3);
+
+	}
+	.titre-poste{
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.infos-postes li{
+		list-style-type: none;
+		padding: 20px;
+	}
+	.content-postes h4{
+		font-size: 1.6em;
+		margin: 40px 0 20px 0;
+	}
+	.content-postes ul li{
+		list-style-type: none;
+	}
+s
+	.content-postes{
+		padding: 20px;
+	} 
 }
