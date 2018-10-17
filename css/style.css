@@ -153,12 +153,12 @@
 	color: #fafafa;
 }
 .rond-open span:first-child{
-	transform: rotate(45deg);
+	transform: rotate(45deg) translate(-1px,6px);
 	transform-origin: center;
 	transition: 0.4s;
 }
 .rond-open span:last-child{
-	transform: rotate(-45deg);
+	transform: rotate(-45deg) translateY(-8px);
 	transform-origin: center;
 	transition: 0.4s;
 }
@@ -323,7 +323,7 @@ a.team {
 	-webkit-box-shadow: 0px 0px 20px 0px rgba(150,150,150,0.4);
 	-moz-box-shadow: 0px 0px 20px 0px rgba(150,150,150,0.4);
 	box-shadow: 0px 0px 20px 0px rgba(150,150,150,0.4);
-	padding: 35px;
+	padding: 25px;
 	margin-bottom: 10px;
 }
 .ecosysteme article .partenaire{
@@ -338,7 +338,7 @@ a.team {
 }
 
 .ecosysteme article img {
-	width: 153px;
+	width: 100px;
 	height: auto;
 	display: block;
 	margin: 1em 0;
@@ -509,21 +509,23 @@ footer ul li img{
 
 /** FICHE A LA UNE **/
 
-.fiche-news img {
+.bgnews{
+	width: 100%;
+	overflow: hidden;
 	position: relative;
 }
 
-.fiche-news article header {
+.fiche-news section header {
 	padding-top: 1.5em;
 	vertical-align: baseline;
 }
-.fiche-news article header span{
+.fiche-news section header span{
 	color: #bababa;
 	padding: 0 0.5em;
 	
 }
 
-.fiche-news article header h1{
+.fiche-news section header h1{
 	font-family: 'Bebas Neue';
 	
 }
@@ -532,6 +534,9 @@ footer ul li img{
 	padding: 0.5em 0;
 }
 
+.fiche-news section:nth-child(2) div {
+	margin: 0 auto;
+}
 
 
 
@@ -630,7 +635,7 @@ footer ul li img{
 
 	}
 	
-	.btnwhite,.btnred,.btnblack{
+	.btnwhite,.btnred,.btnblack, .btn-bd-red{
 		padding: 10px 0;
 		font-size: 1.4em;
 		margin-top: 70px;
@@ -686,7 +691,7 @@ footer ul li img{
 	.menu-desktop li a::after {
 		content: '';
 		position: absolute;
-		bottom: 48px;
+		bottom: 3.2em;
 		left: 0;
 		width: 100%;
 		height: 5px;
@@ -770,7 +775,7 @@ footer ul li img{
 		background-color: #e33C2C;
 		color: #fafafa;
 		font-size: 24px;
-		padding: 20px 5px;
+		padding: 0.7em;
 		line-height: 22px;
 		-webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.4);
 		-moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.4);
@@ -884,7 +889,16 @@ footer ul li img{
 		font-size: 1.2em;
 		margin-top: 10px;
 		position: relative;
+		
 	}
+
+	.ecosysteme article img {
+		width: 125px;
+		height: auto;
+		margin:0;
+		
+	}
+
 	footer ul li img{
 		width: 100%;
 		height: auto;
@@ -899,6 +913,11 @@ footer ul li img{
 		width: 60%;
 		height: auto;
 	}
+
+	.rs-color ul li img {
+		width: 20%;
+	}
+
 /** /\/\/\/\/\/\/\-----A LA UNE REALISATIONS-----/\/\/\/\/\/\/\  **/
 	.bgalaune{
 		margin-top: 80px;
@@ -922,11 +941,135 @@ footer ul li img{
 
 
 /*****FICHE A LA UNE *****/
-.img-head-article{
-	height: 400px;
-	background-size: cover;
+
+.bgnews {
+	height: 300px;
+}
+.bgnews img{
+	width: auto;
+	position:relative;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+} 
+
+.fiche-news section header {
+	padding-top: 1.5em;
+	vertical-align: baseline;
+}
+.fiche-news section header span{
+	color: #bababa;
+	padding: 0 0.5em;
+	
 }
 
+.fiche-news section header h1{
+	font-family: 'Bebas Neue';
+}
+
+.fiche-news section img {
+	padding: 0.5em 0;
+	overflow: hidden;
+	min-height: 400px;
+}
+
+.fiche-news section aside img {
+	min-height: 200px;
+	
+}
+
+.fiche-news section:nth-child(2) div {
+	margin: 0 auto;
+}
+
+/********* NOS REALISATIONS LISTE ************/
+
+
+/*** SECTION BG WHITE ***/
+.bg-rea-white {
+	background: url("../images/bg-rea-white.png") no-repeat ;
+	background-size: 100%;
+	background-position: top;
+	height: 460px;
+} 
+
+.bg-rea-white header{
+	display:block;
+	color: #E33C2C;
+}
+
+.bg-rea-white div {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.bg-rea-white header h4, .bg-rea-white header p, .bg-rea-white p{	
+	text-align: center;
+}
+
+
+.bg-rea-white header h4 {
+	font-family: 'Bebas Neue';
+	margin-top: 0;
+}
+.bg-rea-white header p {
+	margin-bottom: 0;
+}
+
+.bg-rea-white .btnblack {
+	margin: 1.5em auto;
+	text-align: center;
+	padding: 0.1em;
+	margin-left: 0px;
+} 
+
+
+/*** SECTION BG RED ***/
+
+.bg-rea-red {
+	background: url("../images/bg-rea-red.png") no-repeat ;
+	background-size: 100%;
+	background-position: top;
+	height: 464px;
+} 
+.bg-rea-red header, .bg-rea-red p{
+	display:block;
+	color: white;
+}
+
+.bg-rea-red div {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.bg-rea-red header h4, .bg-rea-red header p, .bg-rea-red p{	
+	text-align: center;
+}
+
+
+.bg-rea-red header h4 {
+	font-family: 'Bebas Neue';
+	margin-top: 0;
+}
+.bg-rea-red header p {
+	margin-bottom: 0;
+}
+
+.bg-rea-red .btnwhite {
+	margin: 1.5em auto;
+	text-align: center;
+	padding: 0.1em;
+	margin-left: 0px;
+	color: #383838;
+}
+
+.bg-rea-red .btnwhite:hover{
+	color: white;
+}
 
 
 
