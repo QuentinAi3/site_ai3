@@ -752,8 +752,16 @@ footer ul li img{
 .tribu h2{
 	margin: 20px;
 }
-.video_rec{
-	
+.quote{
+	margin-top: 60px;
+	text-align: center;
+
+}
+.quote p{
+	color: #e33C2C;
+	font-weight: bold;
+	font-size: 1.2em;
+	position: relative;
 }
 	form {
   max-width: 600px;
@@ -817,7 +825,7 @@ footer ul li img{
 	.cf:after {
 	  clear: both;
 	}
-
+/** /\/\/\/\/\/\/\-----PAGE NOUS REJOINDRE-----/\/\/\/\/\/\/\  **/
 @media (min-width: 576px) {
 	*{
 		
@@ -1182,6 +1190,8 @@ footer ul li img{
 		height: 400px;
 		
 	}
-	.tribu{
+	.politique-rh *{
+		font-size: 1.05em;
 	}
+
 }
