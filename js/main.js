@@ -3,28 +3,29 @@ $(document).ready(function(){
 
 	$(".rond").click( function() {
 
-	$('.back-cover').show("slow");
+	$('.back-cover').show("fast");
 	});
 
 	$('.rond-open').on('click touch',function(){
-		$('.back-cover').hide("slow");
+		$('.back-cover').hide("fast");
 	});
 	$('.rond-open').on('click touch',function(){
-		$('.cache').hide("slow");
+		$('.cache').hide("fast");
 	});
 
       
     $('.btnpolitique').on('click touch',function(){
-      $('.job').hide("slow");
-      $('.politique-rh').show("slow");
+      $('.job').hide("fast");
+      $('.politique-rh').show("fast");
     });
 	$('.btnoffre').on('click touch',function(){
-      $('.politique-rh').hide("slow");
-      $('.job').show("slow");
+      $('.politique-rh').hide("fast");
+      $('.job').show("fast");
     });
 
-	
-	
+
+		
+
 /** ANIME POSTES **/
 
 	
@@ -33,8 +34,12 @@ $(document).ready(function(){
   if (!columns_container.hasClass("expanded")) {
     $(".dynamic-columns .liste-postes").removeClass("col-md-9");
     $(".dynamic-columns .liste-postes").addClass("col-md-3");
+	 $(this).css( "background-color", "#e33C2C");
+	 $(this).find('p,span').css("color", "#fafafa");
+	 
 	  
-	 $(".desc-postes").removeClass("d-none");
+	 /** APPARITION DESC POSTE **/ 
+	$(".desc-postes").removeClass("d-none");
     $(".desc-postes").addClass("d-inline-block");
 
     columns_container.toggleClass("expanded");
@@ -43,12 +48,19 @@ $(document).ready(function(){
     $(".dynamic-columns .liste-postes").removeClass("col-md-3");
     $(".dynamic-columns .liste-postes").addClass("col-md-9");
 	
-	  $(".desc-postes").removeClass("d-inline-block");
+	$(this).css( "background-color", "#fafafa");
+	$(this).find('p,span').attr("style", "");  
+	
+	
+	  
+	 /** APPARITION DESC POSTE **/ 
+	$(".desc-postes").removeClass("d-inline-block");
     $(".desc-postes").addClass("d-none");
 
     columns_container.toggleClass("expanded");
   }
 });
 	
+
 });
 

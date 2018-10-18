@@ -495,7 +495,21 @@ footer ul li img{
 
 
 /** /\/\/\/\/\/\/\-----PAGE NOUS REJOINDRE-----/\/\/\/\/\/\/\  **/
-.header div{
+.retour{
+	z-index: 99;
+	text-align: center;
+	cursor: pointer;
+	font-size: 30px;
+	position: absolute;
+	top: 2%;
+	right: 6%;
+	position: fixed;
+	border-radius: 9999px;
+	background-color: #bababa;
+	width: 50px;
+	height: 50px;
+}
+.header .txt-rejoindre{
 	position: absolute;
 	top: 38%;
 	left: 50%;
@@ -503,13 +517,14 @@ footer ul li img{
 	text-align: center;
 	color: #fafafa;
 }
-.header div h2{
+.header .txt-rejoindre h2{
 	font-family: 'Bebas Neue';
 }
-.header div p{
+.header .txt-rejoindre p{
 	font-size: 0.6em;
 	font-weight: 100;
 }
+
 .button-job div:first-child{
 	color: #e33C2C;
 }
@@ -529,7 +544,6 @@ footer ul li img{
 	content: '\25bc';	
 }
 .job{
-	
 	margin: 15px 0;
 	text-align: center;
 }
@@ -568,23 +582,19 @@ footer ul li img{
 	-moz-box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3);
 	box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3);
 }
-.form-check label{
-	margin-left: 15px;
-}
-.form-check input{
-	border: solid #bababa 1px!important;
 
-}
-.form-check{
-	margin-bottom: 10px;
-}
 .checkbox{
 	margin-top: 20px;
 }
 .liste-postes{
-		margin-top: 45px;
+	-webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+	margin-top: 45px;
 }
 .postes{
+	cursor: pointer;
 	background-color: #fafafa;
 	text-align: left;
 	padding: 20px 0;
@@ -605,17 +615,56 @@ footer ul li img{
 	position: relative;
 	display: block;
 }
-.postes span:nth-of-type(1){
+.postes span:nth-child(1){
 	padding: 0 8px;
 }
-.postes span:nth-of-type(2){
+.postes span:nth-child(2){
 	color: #828282;
 }
 .postes:nth-of-type(1){
 	
 }
+.desc-postes{
+	z-index: 3;
+	position: absolute!important;
+	top: 0;
+	left: 0;
+	background-color: #fafafa;
+	text-align: left;
+	padding: 60px 30px!important;
+	border-radius: 11px!important;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3);
+	box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3);
+	-webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 
-
+	}
+	.center-postes{
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.infos-postes li{
+		list-style-type: none;
+		padding: 20px;
+	}
+	.content-postes h4{
+		font-size: 1.6em;
+		margin: 40px 0 20px 0;
+		font-weight: bold;
+	}
+	.content-postes ul li{
+		list-style-type: none;
+	}
+	.content-postes{
+		padding: 20px;
+	} 
+.content-postes p{
+	color: #e33C2C;
+	font-weight: bold;
+}
 .politique-rh{
 	margin-top: 30px;
 	display: none;
@@ -658,6 +707,72 @@ footer ul li img{
 .tribu h2{
 	margin: 20px;
 }
+.video_rec{
+	
+}
+	form {
+  max-width: 600px;
+  text-align: center;
+  margin: 20px auto;
+}
+	form input, form textarea {
+	  border: solid 1px #bababa;
+	  outline: 0;
+	  padding: 1em;
+	  -moz-border-radius: 8px;
+	  -webkit-border-radius: 8px;
+	  border-radius: 8px;
+	  display: block;
+	  width: 100%;
+	  margin-top: 1em;
+	  resize: none;
+	}
+	form input:focus, form textarea:focus {
+	  -moz-box-shadow: 0 0px 2px #e33C2C !important;
+	  -webkit-box-shadow: 0 0px 2px #e33C2C !important;
+	  box-shadow: 0 0px 2px #e33C2C !important;
+		border: 0;
+	}
+
+
+	form textarea {
+	  height: 126px;
+	}
+
+	.half {
+	  float: left;
+	  width: 48%;
+	  margin-bottom: 1em;
+	}
+
+	.right {
+	  width: 50%;
+	}
+
+	.left {
+	  margin-right: 2%;
+	}
+
+	@media (max-width: 480px) {
+	  .half {
+		width: 100%;
+		float: none;
+		margin-bottom: 0;
+	  }
+	}
+	/* Clearfix */
+	.cf:before,
+	.cf:after {
+	  content: " ";
+	  /* 1 */
+	  display: table;
+	  /* 2 */
+	}
+
+	.cf:after {
+	  clear: both;
+	}
+
 @media (min-width: 576px) {
 	*{
 		
@@ -685,7 +800,7 @@ footer ul li img{
 	.btnwhite,.btnred,.btnblack{
 		padding: 10px 0;
 		font-size: 1.4em;
-		margin-top: 70px;
+		margin-top: 20px;
 	}
 	.contentbody{
 		background: url("../images/bgdesk.png") no-repeat ;
@@ -949,7 +1064,10 @@ footer ul li img{
 		font-size: 3.5em;
 	}
 /** /\/\/\/\/\/\/\-----NOUS REJOINDRE-----/\/\/\/\/\/\/\  **/	
-	
+	.header .txt-rejoindre p{
+	font-size: 1.5em;
+	font-weight: 100;
+	}
 	.button-job{
 		position: relative;
 		top: -60px;
@@ -983,33 +1101,18 @@ footer ul li img{
 		display: inline-block;
 	}
 	.desc-postes{
-		background-color: #fafafa;
-		text-align: left;
-		padding: 80px;
+		padding: 70px;
 		margin-top: 45px;
-		border-radius: 11px!important;
-		-webkit-box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3);
-		-moz-box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3);
-		box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3);
-
+		position: relative!important;
 	}
-	.titre-poste{
+	.spontanee{
 		text-align: center;
-		margin-bottom: 30px;
 	}
-	.infos-postes li{
-		list-style-type: none;
-		padding: 20px;
+	.video_rec{
+		width:60%;
+		height: 400px;
+		
 	}
-	.content-postes h4{
-		font-size: 1.6em;
-		margin: 40px 0 20px 0;
+	.tribu{
 	}
-	.content-postes ul li{
-		list-style-type: none;
-	}
-s
-	.content-postes{
-		padding: 20px;
-	} 
 }
