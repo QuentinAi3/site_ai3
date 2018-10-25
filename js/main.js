@@ -61,6 +61,32 @@ $(document).ready(function(){
   }
 });
 	
+	$(".postes").on('click touch',function(){
+  var postes = $(".liste-postes");
+  if (postes.hasClass("active-postes")) {
+  }
+  else {
+  }
+		
+});
 
+	 /** CONTACT **/ 
+var lastShown;
+$('.agences').on('click','li', function(){
+  var index = $(this).index();
+    if(lastShown)
+        lastShown.hide('fast');
+    lastShown = $('.gmap iframe:eq('+index+')')
+    lastShown.show('fast');
+});
+	
+var adresse;
+$('.agences').on('click','li', function(){
+  var index = $(this).index();
+    if(adresse)
+        adresse.hide('fast');
+    adresse = $('.coordonnees li:eq('+index+')')
+    adresse.show('fast');
+});
 });
 
