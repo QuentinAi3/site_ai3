@@ -23,6 +23,10 @@ $(document).ready(function(){
       $('.job').show("fast");
     });
 
+	$('.retour').on('click touch',function(){
+		$('.desc-postes').removeClass("d-inline-block");
+		$('.desc-postes').addClass("d-none");
+	});
 
 		
 
@@ -61,14 +65,7 @@ $(document).ready(function(){
   }
 });
 	
-	$(".postes").on('click touch',function(){
-  var postes = $(".liste-postes");
-  if (postes.hasClass("active-postes")) {
-  }
-  else {
-  }
-		
-});
+
 
 	 /** CONTACT **/ 
 var lastShown;

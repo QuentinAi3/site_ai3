@@ -451,7 +451,6 @@ footer h2{
 	font-family: 'Bebas Neue';
 	color: #fff;
 	font-size: 2.2em;
-	margin-top: 65px;
 	
 }
 footer ul{
@@ -475,6 +474,12 @@ footer ul li img{
 	width: 60%;
 	height: auto;
 }
+blockquote{
+	color: #fafafa;
+	padding: 40px 10px;
+	margin: 0;
+}
+
 /** FIN_FOOTER **/
 
 /** /\/\/\/\/\/\/\-----A LA UNE-----/\/\/\/\/\/\/\  **/
@@ -975,6 +980,57 @@ form textarea {
 	background-color: #ececec;
 }
 
+.photo1{
+	background-color: green;
+	width: 300px;
+	height: 200px;
+	align-self: flex-end;
+	margin-right: 20px;
+}
+.photo2{
+	background-color: red;
+	width: 700px;
+	height: 500px;
+}
+.photo3{
+	background-color: green;
+	width: 200px;
+	height: 150px;
+	align-self: flex-end;
+	margin: 20px 20px 0 320px;
+}
+.atelier{
+	background-color: red;
+	width: 270px;
+	height: 90px;
+	margin-top: 20px;
+	color: #fafafa;
+	text-align: center;
+	line-height: 90px;
+}
+.challenge{
+	margin: 100px 0;
+}
+.challenge span{
+	color: #e33C2C;
+	font-weight: bold;
+}
+.concept h2{
+	text-align: center;
+}
+.content-concept{
+	background-color: #e33C2C;
+}
+.content-concept p{
+	padding: 100px;
+	color: #fafafa;
+}
+.image-concept{
+	padding: 100px;
+}
+.image-concept div{
+	background-color: blue;
+}
 /** /\/\/\/\/\/\/\-----PAGE CONTACT-----/\/\/\/\/\/\/\  **/	
 .map h2, .formulaire h2{
 	padding: 70px;
@@ -1058,10 +1114,7 @@ form textarea {
 
 
 @media (min-width: 1200px) {
-	*{
 
-	}
-	
 	.btnwhite,.btnred,.btnblack, .btn-bd-red{
 		padding: 10px 0;
 		font-size: 1.4em;
@@ -1147,7 +1200,7 @@ form textarea {
 		top: 10px!important;
 		left: 10px!important;
 		width: 100vw!important;
-		padding-left: 5%!important;		
+		padding-left: 5%!important;	
 	}
 	.navdown li{
 		padding: 0 40px;
@@ -1303,7 +1356,10 @@ form textarea {
 		max-width: calc(25% - 10px);
 		font-size: 1.2em;
 	}
-	
+	.pilier article .icones img{
+		height: 60px;
+		width: auto;
+	}
 	.join{
 		background-size: 100%;
 	}
@@ -1317,12 +1373,17 @@ form textarea {
 		position: relative;
 		
 	}
-
+	.ecosysteme article{
+		transition: all 0.3s;
+	}
 	.ecosysteme article img {
 		width: 125px;
 		height: auto;
 		margin:0;
 		
+	}
+	.ecosysteme article:hover{
+		background-color: #f5f5f5;
 	}
 	.header .img-eco{
 		height: auto;
