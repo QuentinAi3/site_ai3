@@ -10,7 +10,6 @@
 }
 
 @font-face {
-    font-family: 'Bebas Neue';
     src: url('../fonts/BebasNeue.eot');
     src: url('../fonts/BebasNeue.eot?#iefix') format('embedded-opentype'),
         url('../fonts/BebasNeue.woff2') format('woff2'),
@@ -30,9 +29,9 @@
     padding-left: 0;
   }
 }
+/** /\/\/\/\/\/\/\-----HOME PAGE-----/\/\/\/\/\/\/\  **/
 
 /** BOUTONS **/
-
 .btnred{
 	font-family: 'Bebas Neue';
 	color: white;
@@ -50,7 +49,6 @@
 	transition: 0.4s;
 	text-decoration: none;
 }
-
 .btnwhite{
 	font-family: 'Bebas Neue';
 	color: #e33C2C;
@@ -71,7 +69,6 @@
 	color: white;
 	text-decoration: none;
 }
-
 .btnblack{
 	font-family: 'Bebas Neue';
 	color: white;
@@ -95,6 +92,7 @@
 	font-family: 'Bebas Neue';
 	color: white;
 	background-color: #e33C2C;
+	color: #fafafa;
 	border-radius: 9999px;
 	text-align: center;
 	padding: 1% 0;
@@ -108,11 +106,29 @@
 	text-decoration: none;
 }
 
-
+.btn-bd-red{
+	font-family: 'Bebas Neue';
+	color: #e33C2C;
+	background-color: #fff;
+	border-radius: 9999px;
+	text-align: center;
+	padding: 4% 0;
+	font-size: 22px;
+	margin: 30px 0 0 0;
+	transition: 0.4s;
+	border: solid 2px #e33C2C;
+}
+.btn-bd-red:hover{
+	border: solid 2px #3d3d3d;
+	transition: 0.4s;
+	color: #3D3D3D;
+	text-decoration: none;
+}
 /** FIN BOUTONS **/
 
-/** MENU OPEN **/
 
+
+/** MENU OPEN **/
 .back-cover{
 	position: fixed;
 	z-index: 99997;
@@ -121,7 +137,6 @@
 	top: 0;
 	left: 0;
 	display: none;
-	transition: 0.4s;
 	padding: 10px;
 	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 28%, rgba(255,255,255,0.7) 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 28%,rgba(255,255,255,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -133,22 +148,18 @@
 .rond-open{
 	background-color: #3a3a3a;
 }
-
 .rond-open div span{
 	color: #fafafa;
 }
 .rond-open span:first-child{
-	transform: rotate(45deg);
+	transform: rotate(45deg) translate(-1px,6px);
 	transform-origin: center;
-	transition: 0.4s
+	transition: 0.4s;
 }
 .rond-open span:last-child{
-	transform: rotate(-45deg);
+	transform: rotate(-45deg) translateY(-8px);
 	transform-origin: center;
-	transition: 0.4s
-}
-.menu{
-	
+	transition: 0.4s;
 }
 .menu li{
 	padding: 15px;
@@ -179,10 +190,22 @@
 html {
     font-size: calc(12px + 10 * ((100vw - 576px) / 680));
   }
+h2{
+	font-family: 'Bebas Neue'!important;
+}
+h3{
+	font-family: 'Segoe Ui'!important;
+	font-size: 2em!important;
+}
+ul{
+	padding: 0;
+}
 .contentbody{
 	background: url("../images/bgmobile.png") no-repeat ;
 	background-size: 100%;
 }
+
+/** NAVIGATION **/
 nav {
 	text-align: center;
 	padding: 10px;
@@ -191,19 +214,24 @@ nav {
 	-moz-box-shadow: 0px 0px 19px -2px rgba(0,0,0,0.2);
 	box-shadow: 0px 0px 19px -2px rgba(0,0,0,0.2);
 }
-
-
 .logorouge{
 	margin-left: auto;
 	margin-right: auto;
 	width: 80%;
 	height: auto;
 }
-.team{
+.team div{
 	font-family: 'Bebas Neue';
 	font-size: 19px;
 	line-height: 20px;
+	color: black;
+	cursor: pointer;
 }
+.team:hover{
+	text-decoration: none;
+	color: #fafafa;
+}
+
 .rond{
 	width: 65px;
 	height: 65px;
@@ -212,7 +240,6 @@ nav {
 	margin-right: auto;
 	background-color: #e8e8e8;
 	position: relative;
-	
 }
 .rond div{
 	position: absolute;
@@ -227,26 +254,25 @@ nav {
 	background-color: #e33C2C;
 	border-radius: 3px;
 	margin: 4px;
-	
-
 }
-
-
 .header{
 	width: 100%;
 	overflow: hidden;
 	height: 230px;
+	position: relative;
 }
 .header img{
 	width: 100%;
 }
+/** FIN_NAVIGATION **/
 
 
+
+/** PILIERS **/
 .pilier{
 	margin: 0;
 	padding: 0;
 	position: relative;
-
 }
 .content-pilier{
 	top: -3em;
@@ -262,7 +288,6 @@ nav {
 	box-shadow: 0px 0px 20px 0px rgba(150,150,150,0.4);
 	margin-bottom: 10px;
 }
-
 .pilier article header{
 	text-align: center;
 }
@@ -275,11 +300,10 @@ nav {
 .bar-info {
 	display: none;
 }
-.pilier .content-pilier article header h2{
+.pilier .content-pilier article header h3{
 	font-size: 18px;
 	font-weight: bold;
 }
-
 .txt-pilier{
 	margin-left: 5%;
 	width: 90%;
@@ -287,9 +311,10 @@ nav {
 	line-height: 16px;
 	text-align: center;
 }
+/** FIN_PILIERS **/
 
 
-
+/** ECOSYSTEME **/
 .ecosysteme{
 	margin-top: 75px;
 }
@@ -305,18 +330,22 @@ nav {
 	-webkit-box-shadow: 0px 0px 20px 0px rgba(150,150,150,0.4);
 	-moz-box-shadow: 0px 0px 20px 0px rgba(150,150,150,0.4);
 	box-shadow: 0px 0px 20px 0px rgba(150,150,150,0.4);
-	padding: 35px;
+	padding: 25px;
 	margin-bottom: 10px;
 }
-
-.ecosysteme article span{
+.ecosysteme article .partenaire{
 	padding: 2px 4px;
 	background-color: #3d3d3d;
 	color: white;
 }
+.ecosysteme article .client{
+	padding: 2px 4px;
+	background-color: #e8e8e8;
+	color: #3D3D3D;
+}
 
 .ecosysteme article img {
-	width: 153px;
+	width: 100px;
 	height: auto;
 	display: block;
 	margin: 1em 0;
@@ -325,9 +354,10 @@ nav {
 	font-size: 13px;
 	line-height: 16px;
 }
+/** FIN_ECOSYSTEME **/
 
 
-
+/** REJOINDRE **/
 .join{
 	background: url("../images/bg-rejoindre.png") no-repeat ;
 	background-size:auto 100%;
@@ -335,7 +365,6 @@ nav {
 	padding: 5% 3%;
 	margin-top: 65px;
 }
-
 .join h1{
 	font-family: 'Bebas Neue';
 	color: white;
@@ -347,8 +376,19 @@ nav {
 	font-size: 1.4em;
 	line-height: 24px;
 }
+/** FIN_REJOINDRE **/
+
+
+/** NEWS **/
 .news{
-	margin-top: 85px;
+	padding: 80px 0 0 0!important;
+}
+.news h3{
+	color: black;
+	font-size: 3em;
+	margin-bottom: 25px;
+	text-align: center;
+	font-weight: bold;
 }
 .news h1{
 	font-family: 'Bebas Neue';
@@ -356,9 +396,6 @@ nav {
 	font-size: 3em;
 	margin-bottom: 25px;
 	text-align: center;
-}
-.news carte{
-	max-height: 435px;
 }
 .news article{
 	border-radius: 10px;
@@ -370,29 +407,26 @@ nav {
 	box-shadow: 0px 0px 20px 0px rgba(150,150,150,0.4);
 	display: block;
 }
-
-
 .news article header img{
 	border-radius: 10px 10px 0 0;
 	width: 100%;
 	height: auto;
+	position: relative;
 }
 .news article .content-news{
 	padding: 20px 25px;
 }
-.news article div span{
-	color: #bababa;
-	font-size: 1.2em;
+.content-news h3{
+	text-align: left;
 }
-
-.news article div h2{
+.news article .content-news div{
+	font-size: 1.2em;
+	display: inline-block;
+}
+.news article div h3{
 	font-weight: bold;
 	font-size: 1.8em;
 	margin: 8px 0;
-	
-}
-.news article div .txt-news{
-
 }
 .news article div p{
 	color: #828282;
@@ -403,7 +437,10 @@ nav {
 	text-overflow: ellipsis;
 }
 
+/** FIN_NEWS **/
 
+
+/** FOOTER **/
 footer{
 	background-color: #3d3d3d;
 	margin-top: 70px;
@@ -414,7 +451,6 @@ footer h2{
 	font-family: 'Bebas Neue';
 	color: #fff;
 	font-size: 2.2em;
-	margin-top: 65px;
 	
 }
 footer ul{
@@ -434,12 +470,629 @@ footer ul li img{
 	width: 20%;
 	height: auto;
 }
-
 .rs li img{
 	width: 60%;
 	height: auto;
 }
+blockquote{
+	color: #fafafa;
+	padding: 40px 10px;
+	margin: 0;
+}
 
+/** FIN_FOOTER **/
+
+/** /\/\/\/\/\/\/\-----A LA UNE-----/\/\/\/\/\/\/\  **/
+
+
+.bgalaune{
+	position: relative;
+	height: 150px;
+	background:  url("../images/bg_alaune.png") no-repeat top;
+	background-size: 200% auto;
+}
+.bgalaune p{
+	font-family: 'Bebas Neue';
+	color: #fafafa;
+	text-align: center;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 70%;
+	left: 50%;
+	font-size: 2em;
+}
+
+/** GOBAL NEWS **/
+.news header p{
+		background-color: #e8e8e8;
+		padding: 0 5px;
+		position: absolute;
+		transform: translate(-50%,-50%);
+		top: 7%;
+		left: 20%;
+		z-index: 4;
+	}
+.news article .content-news .theme{
+		font-size: 12px;
+		color: #e33C2C;
+		float: right;
+	}
+
+.news .incontournable{
+		background:  url("../images/incontournable.png") no-repeat top;
+		background-size: cover;
+		padding: 80px 0 80px 0;
+		margin: 80px 0;
+		
+}
+.news .incontournable h1{
+	color: #fafafa;
+	font-size: 3em;
+	font-family: 'Bebas Neue';
+	text-align: center;
+}
+.classement-news{
+	text-align: center;
+	margin: 0 auto;
+}
+.classement-news li{
+	display: inline-block;
+	font-size: 1.4em;
+	font-weight: bold;
+	padding: 50px;
+	cursor: pointer;
+}
+
+
+/** FICHE A LA UNE **/
+
+.bgnews{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.fiche-news section header {
+	padding-top: 1.5em;
+	vertical-align: baseline;
+}
+.fiche-news section header span{
+	color: #bababa;
+	padding: 0 0.5em;
+	
+}
+
+.fiche-news section header h1{
+	font-family: 'Bebas Neue';
+	
+}
+
+.fiche-news section img {
+	padding: 0.5em 0;
+}
+
+.fiche-news section:nth-child(2) div {
+	margin: 0 auto;
+}
+
+/** /\/\/\/\/\/\/\----- NOS EVENEMENTS -----/\/\/\/\/\/\/\  **/
+
+.bgevent{
+	position: relative;
+	height: 150px;
+	background:  url("../images/bg_alaune.png") no-repeat top;
+	background-size: 200% auto;
+}
+.bgevent p{
+	font-family: 'Bebas Neue';
+	color: #fafafa;
+	text-align: center;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 70%;
+	left: 50%;
+	font-size: 2em;
+}
+.hd-event{
+	position: relative;
+}
+.hd-event img{
+	filter: brightness(70%);
+}
+
+.hd-event img:hover{
+	transition: 0.4s ease-in-out;
+	filter: brightness(100%);
+	cursor: pointer;
+}
+
+.hd-event img:hover ~ .hd-event-date {
+	display: none;
+}
+
+.hd-event span{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-family: 'Bebas Neue';
+	color: white;
+	font-size: 2.5em;
+	display: block;
+}
+
+.rs-color {
+	margin-top: 2em;
+}
+
+.rs-color ul li:first-child{
+	color:black;
+}
+
+.rs-color ul li{
+	display: inline-block;
+	width: 20%;
+	height: auto;
+}
+.rs-color ul li img{
+	width: 50%;
+
+	max-height: 40px;
+}
+
+
+
+/** /\/\/\/\/\/\/\-----PAGE NOUS REJOINDRE-----/\/\/\/\/\/\/\  **/
+.retour{
+	z-index: 99;
+	text-align: center;
+	cursor: pointer;
+	font-size: 30px;
+	position: absolute;
+	top: 2%;
+	right: 6%;
+	position: fixed;
+	border-radius: 9999px;
+	background-color: #fafafa;
+	border: solid 1px #e33C2C;
+	width: 50px;
+	color: #e33C2C;
+	height: 50px;
+}
+.header .txt-rejoindre{
+	position: absolute;
+	top: 38%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	color: #fafafa;
+}
+.header .txt-rejoindre h2{
+	font-family: 'Bebas Neue';
+}
+.header .txt-rejoindre p{
+	font-size: 0.6em;
+	font-weight: 100;
+}
+
+.button-job div:first-child{
+	color: #e33C2C;
+}
+.button-job div div{
+	font-family: 'Bebas Neue';
+	text-align: center;
+	background-color: #fafafa;
+	color: #535353;
+	border-radius: 11px;
+	padding: 20px 15px;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.4);
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.4);
+	cursor: pointer;
+}
+.button-job div div::after{
+	content: '\25bc';	
+}
+.job{
+	margin: 15px 0;
+	text-align: center;
+}
+.job span{
+	color: #e33C2C;
+	
+}
+.job .job-p, .job-p span{
+	font-size: 15px;
+}
+.job .job-p{
+	padding: 20px 0;
+}
+.recherche{
+	height: 30px;
+	border: none;
+	padding-left: 15px;
+	background-color: #fafafa!important;
+	border-radius: 8px!important;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3)!important;
+	-moz-box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3)!important;
+	box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3)!important;
+
+}
+.job .filter{
+	margin-top: 20px;
+}
+
+.job .filter option{
+	padding: 20px;
+}
+.custom-select{
+	height: 50px!important;
+	border-radius: 11px!important;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3);
+	box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3);
+}
+
+.checkbox{
+	margin-top: 20px;
+}
+.liste-postes{
+	-webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+	margin-top: 45px;
+}
+.postes{
+	cursor: pointer;
+	background-color: #fafafa;
+	text-align: left;
+	padding: 20px 0;
+	border-radius: 11px!important;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3);
+	box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3);
+	margin-bottom: 20px;
+	transition: 0.6s;
+}
+.postes p{
+	margin: 0;
+}
+.postes p img{
+	float: right;
+	margin-right: 15px;
+
+	position: relative;
+	display: block;
+}
+.postes span:nth-child(1){
+	padding: 0 8px;
+}
+.postes span:nth-child(2){
+	color: #828282;
+}
+.postes:nth-of-type(1){
+	
+}
+.desc-postes{
+	z-index: 3;
+	position: absolute!important;
+	top: 0;
+	left: 0;
+	background-color: #fafafa;
+	text-align: left;
+	padding: 60px 30px!important;
+	border-radius: 11px!important;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3);
+	box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3);
+	-webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+
+	}
+	.center-postes{
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.infos-postes li{
+		list-style-type: none;
+		padding: 20px;
+	}
+	.content-postes h4{
+		font-size: 1.6em;
+		margin: 40px 0 20px 0;
+		font-weight: bold;
+	}
+	.content-postes ul li{
+		list-style-type: none;
+	}
+	.content-postes{
+		padding: 20px;
+	} 
+.content-postes p{
+	color: #e33C2C;
+	font-weight: bold;
+}
+.politique-rh{
+	margin-top: 30px;
+	display: none;
+	background-color: rgba(255,255,255,0.7);
+}
+.politique-rh h2,h3{
+	font-size: 2em;
+}
+.politique-rh h3{
+	font-weight: bold;
+}
+.prime ul{
+	padding: 0;
+}
+.prime ul li{
+	list-style-type: none;
+}
+.avantages{
+	margin-top: 25px;
+	background-color: #e33C2C;
+	padding: 20px 0;
+	color: #fafafa;
+}
+.avantages p img{
+	width: 200%;
+}
+.avantages div ul{
+	display: inline-block;
+	text-align: left;
+	line-height: 25px;
+}
+.avantages div ul li{
+	list-style-type: none;
+
+}
+.tribu{
+	margin: 35px;
+	text-align: center;
+}
+.tribu h2{
+	margin: 20px;
+}
+.quote{
+	margin-top: 60px;
+	text-align: center;
+
+}
+.quote p{
+	color: #e33C2C;
+	font-weight: bold;
+	font-size: 1.2em;
+	position: relative;
+}
+.contact h2{
+	text-align: center;
+	padding-top: 30px;
+}
+form {
+  max-width: 600px;
+  text-align: center;
+  margin: 20px auto;
+}
+form input, form textarea {
+  border: solid 1px #bababa;
+  outline: 0;
+  padding: 1em;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+  resize: none;
+}
+form input:focus, form textarea:focus {
+  -moz-box-shadow: 0 0px 2px #e33C2C !important;
+  -webkit-box-shadow: 0 0px 2px #e33C2C !important;
+  box-shadow: 0 0px 2px #e33C2C !important;
+	border: 0;
+}
+form textarea {
+  height: 100px;
+}
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.right {
+  width: 50%;
+}
+
+.left {
+  margin-right: 2%;
+}
+
+@media (max-width: 480px) {
+ .half {
+	width: 100%;
+	float: none;
+	margin-bottom: 0;
+  }
+
+}
+/* Clearfix */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+	clear: both;
+}
+/** /\/\/\/\/\/\/\-----FICHE REALISATIONS-----/\/\/\/\/\/\/\  **/	
+
+.pres{
+	background:  url("../images/bg-rea-2.png") no-repeat top;
+	background-size: 70% auto;
+	background-color: #fafafa;
+	padding: 50px 0;
+}
+.pres article{
+	padding: 100px 0!important;
+}
+.realisations article p{
+	font-size: 1.2em;
+	
+}
+.le-projet{
+	background-color: #ececec;
+	padding: 50px 0;
+}
+
+.defi{
+	background-color: #e33C2C;
+	color: #fafafa;
+	padding: 40px!important;
+	height: 60%;
+}
+.expertise{
+	padding: 100px 0;
+	text-align: center;
+}
+.expertise h2{
+	margin: 0 auto;
+}
+.expertise h3{
+	font-size: 1.2em!important;
+}
+.expertise h4{
+	font-size: 1.6em;
+}
+.rond-expert{
+	margin: 25px auto;
+	width: 60px;
+	height: 60px;
+	border-radius: 50px;
+	background-color: #ececec;
+}
+
+.photo1{
+	background-color: green;
+	width: 300px;
+	height: 200px;
+	align-self: flex-end;
+	margin-right: 20px;
+}
+.photo2{
+	background-color: red;
+	width: 700px;
+	height: 500px;
+}
+.photo3{
+	background-color: green;
+	width: 200px;
+	height: 150px;
+	align-self: flex-end;
+	margin: 20px 20px 0 320px;
+}
+.atelier{
+	background-color: red;
+	width: 270px;
+	height: 90px;
+	margin-top: 20px;
+	color: #fafafa;
+	text-align: center;
+	line-height: 90px;
+}
+.challenge{
+	margin: 100px 0;
+}
+.challenge span{
+	color: #e33C2C;
+	font-weight: bold;
+}
+.concept h2{
+	text-align: center;
+}
+.content-concept{
+	background-color: #e33C2C;
+}
+.content-concept p{
+	padding: 100px;
+	color: #fafafa;
+}
+.image-concept{
+	padding: 100px;
+}
+.image-concept div{
+	background-color: blue;
+}
+/** /\/\/\/\/\/\/\-----PAGE CONTACT-----/\/\/\/\/\/\/\  **/	
+.map h2, .formulaire h2{
+	padding: 70px;
+}
+.adresses ul{
+	display: inline-block;
+}
+.map div{
+	height: 500px;
+	padding: 100px 0;
+	margin: 0;
+}
+.map .adresses{
+	background-color:#e33C2C;
+}
+.agences{
+	width: 30%;
+	list-style-type: none;
+	margin: 0 0 0 50px;
+}
+.coordonnees{
+	width: 50%;
+	margin-left: 10%;
+	line-height: 40px;
+}
+.coordonnees li{
+	display: none;
+	font-family: 'bebas neue';
+	text-align: center;
+	list-style-type: none;
+	color: #fafafa;
+	font-size: 2em;
+	background-color: #ececec;
+	color: #e33C2C;
+	padding: 20px;
+	border-radius: 11px;
+		-webkit-box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3);
+	box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3);
+}
+.agences li{
+	font-family: 'bebas neue';
+	color: #fafafa;
+	font-size: 2em;
+	padding: 10px;
+	cursor: pointer;
+}
+.map .row{
+	padding: 0;
+}
+.map .gmap{
+	background-color:#ececec;
+	text-align: center;
+}
+.gmap iframe{
+	width: 80%;
+	height: 100%;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3);
+	box-shadow: 0px 0px 20px 0px rgba(50,50,50,0.3);
+	display: none;
+}
 
 @media (min-width: 576px) {
 	*{
@@ -461,27 +1114,25 @@ footer ul li img{
 
 
 @media (min-width: 1200px) {
-	*{
 
-	}
-	
-	.btnwhite,.btnred,.btnblack{
+	.btnwhite,.btnred,.btnblack, .btn-bd-red{
 		padding: 10px 0;
 		font-size: 1.4em;
-		margin-top: 70px;
+		margin-top: 20px;
 	}
+	.contentbody{
+		background: url("../images/bgdesk.png") no-repeat ;
+		background-size: 100%;
+		background-position: top;
+	}
+	/** MENU **/
 	nav{
 		padding: 0;
 		position: fixed;
 		z-index: 60;
 		display: inline-block;
 		width: 100%;
-	}
-	.contentbody{
-		background: url("../images/bgdesk.png") no-repeat ;
-		background-size: 100%;
-		background-position: top;
-	
+		top: 0;
 	}
 	.menu-desktop{
 		margin: 0;
@@ -492,6 +1143,7 @@ footer ul li img{
 		border: 0;
 		font-size: 9px;
 		text-align: center;
+		justify-content: space-between;
 	}
 	
 	.menu-desktop li a{
@@ -500,7 +1152,7 @@ footer ul li img{
 		padding-left: 0;
 		-webkit-transition: color 0.4s;
 		transition: color 0.4s;
-		color: #9b9b9b;
+		color: #383838;
 	}
 
 	.menu-desktop li a:hover,
@@ -520,7 +1172,7 @@ footer ul li img{
 	.menu-desktop li a::after {
 		content: '';
 		position: absolute;
-		bottom: 48px;
+		bottom: 3.2em;
 		left: 0;
 		width: 100%;
 		height: 5px;
@@ -548,7 +1200,7 @@ footer ul li img{
 		top: 10px!important;
 		left: 10px!important;
 		width: 100vw!important;
-		padding-left: 5%!important;		
+		padding-left: 5%!important;	
 	}
 	.navdown li{
 		padding: 0 40px;
@@ -600,17 +1252,27 @@ footer ul li img{
 	.navdown li a::after {
 		background: #fafafa;
 	}
-	.team{
+	.team div {
 		background-color: #e33C2C;
 		color: #fafafa;
 		font-size: 24px;
-		padding: 20px 0;
+		padding: 0.7em;
+		line-height: 22px;
 		-webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.4);
 		-moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.4);
 		box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.4);
 	}
-	
 
+	.team > div:hover{
+		cursor: pointer;
+		text-decoration: none;
+	}
+	a.team{
+		text-decoration: none;
+	}
+/** FIN_MENU **/
+
+	
 	.content-eco .eco-left{
 		padding: 0;
 	}
@@ -636,6 +1298,7 @@ footer ul li img{
 		max-width: calc(50% - 10px);
 		display: inline-block;
 		height: 280px;	
+		vertical-align: top;
 	}
 	.content-eco .eco-bottom article:first-child{
 		margin-left: 0;
@@ -645,17 +1308,14 @@ footer ul li img{
 		margin-right: 0;
 		margin-left: 11px;
 	}
-	
-	
-	
 	.header{
-		height: 600px;
+		height: 400px;
+		margin-top: 82px;
 	}
 	.header video{
 		width: 100%;
 		height: auto;
 		filter: brightness(60%);
-		
 	}
 	.bar-info {
 		margin-top: 40px;
@@ -696,7 +1356,10 @@ footer ul li img{
 		max-width: calc(25% - 10px);
 		font-size: 1.2em;
 	}
-	
+	.pilier article .icones img{
+		height: 60px;
+		width: auto;
+	}
 	.join{
 		background-size: 100%;
 	}
@@ -706,12 +1369,26 @@ footer ul li img{
 		margin: 0 5px;
 		max-width: calc(25% - 10px);
 		font-size: 1.2em;
+		margin-top: 10px;
+		position: relative;
+		
 	}
-	.news div:first-child{
-
+	.ecosysteme article{
+		transition: all 0.3s;
 	}
-
-
+	.ecosysteme article img {
+		width: 125px;
+		height: auto;
+		margin:0;
+		
+	}
+	.ecosysteme article:hover{
+		background-color: #f5f5f5;
+	}
+	.header .img-eco{
+		height: auto;
+		width: 100%;
+	}
 	footer ul li img{
 		width: 100%;
 		height: auto;
@@ -727,4 +1404,215 @@ footer ul li img{
 		height: auto;
 	}
 
+	.rs-color ul li img {
+		width: 20%;
+	}
+
+/** /\/\/\/\/\/\/\-----A LA UNE REALISATIONS-----/\/\/\/\/\/\/\  **/
+	.bgalaune{
+		margin-top: 80px;
+		height: 400px;
+		background-size: cover;
+	}
+	.bgalaune p{
+		font-size: 3.5em;
+	}
+	
+
+/** /\/\/\/\/\/\/\-----NOS EVENEMENTS-----/\/\/\/\/\/\/\ **/
+	.bgevent{
+		margin-top: 80px;
+		height: 400px;
+		background-size: cover;
+	}
+	.bgevent p{
+		font-size: 3.5em;
+}
+
+/*****FICHE A LA UNE *****/
+
+.bgnews {
+	margin-top: 70px;
+	height: 400px;
+}
+.bgnews img{
+	width: 100%;
+	height: auto;
+} 
+
+.fiche-news section header {
+	padding-top: 1.5em;
+	vertical-align: baseline;
+}
+.fiche-news section header span{
+	color: #bababa;
+	padding: 0 0.5em;
+}
+
+.fiche-news section header h1{
+	font-family: 'Bebas Neue';
+	font-size: 5em;
+}
+
+.fiche-news section img {
+	padding: 0.5em 0;
+	overflow: hidden;
+}
+
+.fiche-news section aside img {
+	min-height: 200px;
+	
+}
+
+.fiche-news section:nth-child(2) div {
+	margin: 0 auto;
+}
+
+/********* NOS REALISATIONS LISTE ************/
+
+
+/*** SECTION BG WHITE ***/
+.bg-rea-white {
+	background: url("../images/bg-rea-white.png") no-repeat ;
+	background-size: 100%;
+	background-position: top;
+	height: 460px;
+} 
+
+.bg-rea-white header{
+	display:block;
+	color: #E33C2C;
+}
+
+.bg-rea-white div {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.bg-rea-white header h4, .bg-rea-white header p, .bg-rea-white p{	
+	text-align: center;
+}
+
+
+.bg-rea-white header h4 {
+	font-family: 'Bebas Neue';
+	margin-top: 0;
+}
+.bg-rea-white header p {
+	margin-bottom: 0;
+}
+
+.bg-rea-white .btnblack {
+	margin: 1.5em auto;
+	text-align: center;
+	padding: 0.1em;
+	margin-left: 0px;
+} 
+.bg-rea-white img{
+
+}
+
+/*** SECTION BG RED ***/
+
+.bg-rea-red {
+	background: url("../images/bg-rea-red.png") no-repeat ;
+	background-size: 100%;
+	background-position: top;
+	height: 464px;
+} 
+.bg-rea-red header, .bg-rea-red p{
+	display:block;
+	color: white;
+}
+
+.bg-rea-red div {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.bg-rea-red header h4, .bg-rea-red header p, .bg-rea-red p{	
+	text-align: center;
+}
+
+
+.bg-rea-red header h4 {
+	font-family: 'Bebas Neue';
+	margin-top: 0;
+}
+.bg-rea-red header p {
+	margin-bottom: 0;
+}
+
+.bg-rea-red .btnwhite {
+	margin: 1.5em auto;
+	text-align: center;
+	padding: 0.1em;
+	margin-left: 0px;
+	color: #383838;
+}
+
+.bg-rea-red .btnwhite:hover{
+	color: white;
+}
+
+/** /\/\/\/\/\/\/\-----NOUS REJOINDRE-----/\/\/\/\/\/\/\  **/	
+	.header .txt-rejoindre p{
+	font-size: 1.5em;
+	font-weight: 100;
+	}
+	.button-job{
+		position: relative;
+		top: -60px;
+	}
+	.button-job div div{
+		padding: 30px 15px;
+		font-size: 1.8em;
+		margin: 20px;
+	}
+	.job .filter{
+		margin-left: 20px;
+
+	}
+	.job .recherche{
+		margin: 20px 0 0 0;
+		height: 50px;
+		border-radius: 11px!important;
+		padding-left: 20px!important;
+	}
+	.job .job-p, .job-p span{
+		font-size: 25px;
+	}
+	.postes span:nth-of-type(1){
+	padding: 0 25px;
+	}
+	.postes:hover{
+		background-color: #CFCFCF;
+		transition: 0.8s;
+	}
+	.liste-postes{
+		display: inline-block;
+	}
+	.desc-postes{
+		padding: 70px;
+		margin-top: 45px;
+		position: relative!important;
+	}
+	.spontanee{
+		text-align: center;
+	}
+	.video_rec{
+		width:60%;
+		height: 400px;
+		
+	}
+	.politique-rh *{
+		font-size: 1.05em;
+	}
+/** /\/\/\/\/\/\/\-----FICHE REALISATIONS-----/\/\/\/\/\/\/\  **/	
+	
+	
 }
